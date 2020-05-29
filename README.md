@@ -9,11 +9,12 @@ The California Central Valley Groundwater-Surface Water Simulation Model (C2VSim
 
 This repository holds the various model releases from DWR on the trunk and modified versions on branches.
 
+All *.dat files in this repo are stored using git-lfp. You may need to install "git large file protocol" capabilities on your computer to push files to github.
+
 * Version
 
-Initial release: Beta May 1, 2018
-
-Branch: Public Release
+Initial release: Beta May 2018
+Second release:  Beta2 May 2019
 
 ### How do I get set up? ###
 
