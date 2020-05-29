@@ -10,13 +10,13 @@ C
 C             Project:  C2VSim Fine Grid (C2VSimFG)
 C                       California Central Valley Groundwater-Surface Water Simulation Model
 C             Filename: C2VSimFG_IDC.in
-C             Version:  C2VSimFG_BETA     2018-05-01
+C             Version:  C2VSimFG_BETA2     2019-05-06
 C             
 C*******************************************************************************
 C
-C                        ***** Beta Model Disclaimer *****
+C                        ***** BETA2 Model Disclaimer *****
 C
-C          This is a beta version of C2VSimFG and is subject to change.  Users 
+C          This is a BETA2 version of C2VSimFG and is subject to change.  Users 
 C          of this version should be aware that this model is undergoing active
 C          development and adjustment. Users of this model do so at their own
 C          risk subject to the GNU General Public License below. The Department 
