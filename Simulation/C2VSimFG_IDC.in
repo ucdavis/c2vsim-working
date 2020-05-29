@@ -1,0 +1,131 @@
+C*******************************************************************************
+C
+C                          IWFM DEMAND CALCULATOR (IDC)
+C                              *** Version 2015 ***
+C
+C*******************************************************************************
+C
+C                            MAIN INPUT FILE
+C
+C             Project:  C2VSim Fine Grid (C2VSimFG)
+C                       California Central Valley Groundwater-Surface Water Simulation Model
+C             Filename: C2VSimFG_IDC.in
+C             Version:  C2VSimFG_BETA     2018-05-01
+C             
+C*******************************************************************************
+C
+C                        ***** Beta Model Disclaimer *****
+C
+C          This is a beta version of C2VSimFG and is subject to change.  Users 
+C          of this version should be aware that this model is undergoing active
+C          development and adjustment. Users of this model do so at their own
+C          risk subject to the GNU General Public License below. The Department 
+C          does not guarantee the accuracy, completeness, or timeliness of the 
+C          information provided. Neither the Department of Water Resources nor 
+C          any of the sources of the information used by the Department in the
+C          development of this model shall be responsible for any errors or 
+C          omissions, for the use, or results obtained from the use of this model.
+C
+C*******************************************************************************
+C
+C  California Central Valley Groundwater-Surface Water Flow Model (C2VSim)
+C  Copyright (C) 2012-2018
+C  State of California, Department of Water Resources
+C
+C  This model is free. You can redistribute it and/or modify it
+C  under the terms of the GNU General Public License as published
+C  by the Free Software Foundation; either version 2 of the License,
+C  or (at your option) any later version.
+C
+C  This model is distributed WITHOUT ANY WARRANTY; without even
+C  the implied warranty of MERCHANTABILITY or FITNESS FOR A
+C  PARTICULAR PURPOSE.  See the GNU General Public License for
+C  more details. (http://www.gnu.org/licenses/gpl.html)
+C
+C  The GNU General Public License is available from the Free Software
+C  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+C
+C  For technical support, e-mail: IWFMtechsupport@water.ca.gov
+C
+C
+C    Principal Contact:
+C          Tariq N. Kadir, PE, Senior Engineer, DWR
+C          (916) 653-3513, kadir@water.ca.gov
+C
+C   SGMA Contact:
+C          Tyler Hatch, PhD, PE, Senior Engineer, DWR
+C          (916) 651-7014, tyler.hatch@water.ca.gov
+C
+C*******************************************************************************
+C                              File Description
+C
+C    This file contains the control data for IDC that includes the names and 
+C    descriptions of all simulation files; simulation period and output conversion  
+C    factors.
+C
+C  *Listed below are all input and output file names used when running the
+C   utility.  
+C
+C  *Each file name has a maximum length of 1000 characters
+C  *If an optional file does not exist for a project, leave the filename blank
+C
+C-------------------------------------------------------------------------------
+C    FILE NAME                                      DESCRIPTION
+C---------------------------------------------------------------------------------------------
+  ..\Preprocessor\C2VSimFG_Elements.dat             / 1: ELEMENT CONFIGURATION FILE (INPUT, REQUIRED)
+  ..\Preprocessor\C2VSimFG_Nodes.dat                / 2: NODE X-Y COORDINATE FILE (INPUT, REQUIRED)
+                                                    / 3: LAKE ELEMENTS DATA FILE (INPUT, OPTIONAL)
+  RootZone\C2VSimFG_RootZone.dat                    / 4: ROOT ZONE PARAMETER DATA FILE (INPUT, REQUIRED)
+                                                    / 5: DEPTH-TO-GROUNDWATER DATA FILE (INPUT, OPTIONAL)
+  C2VSimFG_Precip.dat                               / 6: PRECIPITATION DATA FILE (INPUT, REQUIRED)
+  C2VSimFG_ET.dat                                   / 7: EVAPOTRANSPIRATION DATA FILE (INPUT, REQUIRED)
+C*******************************************************************************
+C                         Model Simulation Period
+C
+C   The following lists the simulation beginning time, ending time and time step length.  
+C
+C   BDT    ; Beginning simulation date and time. Use MM/DD/YYYY_hh:mm format. 
+C             * Midnight is 24:00
+C   EDT   ; Ending simulation date and time.  Use MM/DD/YYYY_hh:mm format. 
+C            * Midnight is 24:00
+C   UNITT  ; Time step length and unit. Choose one of the following:
+C                  1MIN
+C                  2MIN
+C                  3MIN
+C                  4MIN
+C                  5MIN
+C                  10MIN
+C                  15MIN
+C                  20MIN
+C                  30MIN
+C                  1HOUR
+C                  2HOUR
+C                  3HOUR
+C                  4HOUR
+C                  6HOUR
+C                  8HOUR
+C                  12HOUR
+C                  1DAY
+C                  1WEEK
+C                  1MON
+C                  1YEAR
+C
+C-------------------------------------------------------------------------------
+C       VALUE                   DESCRIPTION
+C-------------------------------------------------------------------------------
+        09/30/1998_24:00        / BDT
+        09/30/2015_24:00        / EDT     
+        1MON                    / UNITT
+C******************************************************************************
+C                   Output Control Options
+C
+C    CACHE   ; Cache size in terms of number of values stored for time series data output
+C    KDEB    ; Enter  1 - to print messages on the screen to monitor execution
+C              Enter  0 - otherwise 
+C              Enter -1 - to supress printing of timesteps on the screen
+C
+C-----------------------------------------------------------------------------
+C       VALUE                   DESCRIPTION
+C-----------------------------------------------------------------------------
+      5000000                   / CACHE
+      0                         / KDEB
