@@ -1,4 +1,4 @@
-..\bin\IWFM2015.0.828\Simulation2015_x64.exe C2VSimFG.in
+..\bin\IWFM-2015.0.1045\Simulation2015_x64.exe C2VSimFG.in
 pause
 REM ===========================================
 REM

@@ -1,8 +1,13 @@
 # Text Output files
 *.out
+*.OUT
+*.bud
+*.BUD
+
 
 # HDF Output Files
 *.hdf
+*.HDF
 
 # Binary Output Files
 *.bin

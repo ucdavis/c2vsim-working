@@ -10,15 +10,14 @@ C                          for IWFM Simulation
 C
 C             Project:  C2VSim Fine Grid (C2VSimFG)
 C                       California Central Valley Groundwater-Surface Water Simulation Model
-C             Filename: C2VSimFG.in
-C             Version:  C2VSimFG_BETA2     2019-05-06
+C             Version:  C2VSimFG_v1.0     2020-12-04
 C             
 C*******************************************************************************
 C
-C                        ***** BETA2 Model Disclaimer *****
+C                         ***** Version 1.0 Model Disclaimer *****
 C
-C          This is a beta version of C2VSimFG and is subject to change.  Users 
-C          of this version should be aware that this model is undergoing active
+C          This is Version 1.0 of C2VSimFG and is subject to change.  Users of
+C          this version should be aware that this model is undergoing active
 C          development and adjustment. Users of this model do so at their own
 C          risk subject to the GNU General Public License below. The Department 
 C          does not guarantee the accuracy, completeness, or timeliness of the 
@@ -29,8 +28,8 @@ C          omissions, for the use, or results obtained from the use of this mode
 C
 C*******************************************************************************
 C
-C  California Central Valley Groundwater-Surface Water Flow Model (C2VSim)
-C  Copyright (C) 2012-2018
+C  California Central Valley Groundwater-Surface Water Flow Model - Fine Grid (C2VSimFG)
+C  Copyright (C) 2012-2020
 C  State of California, Department of Water Resources
 C
 C  This model is free. You can redistribute it and/or modify it
@@ -46,16 +45,16 @@ C
 C  The GNU General Public License is available from the Free Software
 C  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 C
-C  For technical support, e-mail: IWFMtechsupport@water.ca.gov
+C  For technical support, e-mail: C2VSimFGtechsupport@water.ca.gov
 C
 C
-C    Principal Contact:
-C          Tariq N. Kadir, PE, Senior Engineer, DWR
-C          (916) 653-3513, kadir@water.ca.gov
-C
-C   SGMA Contact:
-C          Tyler Hatch, PhD, PE, Senior Engineer, DWR
+C    C2VSimFG/SGMA Contact:
+C          Tyler Hatch, PhD, PE, Supervising Engineer, DWR
 C          (916) 651-7014, tyler.hatch@water.ca.gov
+C
+C    IWFM Contact:
+C          Emin Can Dogrul PhD, PE, Senior Engineer, DWR
+C          (916) 654-7018, can.dogrul@water.ca.gov
 C
 C*******************************************************************************
 C                        Titles Printed in the Output
@@ -66,7 +65,7 @@ C
 C                          **********************
                  Historical Simulation, Water Years 1922-2015
                          Central Valley, California
-                               C2VSimFG_BETA2
+                               C2VSimFG_v1.0
 C                          **********************
 C*****************************************************************************
 C                            File Description
@@ -215,9 +214,9 @@ C-------------------------------------------------------------------------------
      2                          / MSOLVE
      1.12                       / RELAX
      5000                       / MXITER	
-     50                         / MXITERSP
-     0.10                       / STOPC
-     0.010                      / STOPCSP
+     15                         / MXITERSP
+     0.010                       / STOPC
+     0.070                      / STOPCSP
 C*******************************************************************************
 C                    Supply Adjustment Control Options
 C
